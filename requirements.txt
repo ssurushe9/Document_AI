@@ -1,0 +1,14 @@
+Flask==2.0.2
+gunicorn==20.1.0
+numpy>=1.9.2
+Pillow
+google-cloud-storage
+jsons
+opencv-python-headless
+psycopg2
+pandas
+requests
+fuzzywuzzy
+regex
+textract-trp
+cdifflib

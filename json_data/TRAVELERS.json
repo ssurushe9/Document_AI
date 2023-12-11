@@ -1,0 +1,1 @@
+{"travelers_customer": {"table": "loss_details", "category": "id"}, "travelers_sai": {"table": "loss_details", "category": "id"}, "travelers_loi": {"table": "loss_details", "category": "id"}, "travelers_policy": {"table": "loss_details", "category": "id"}, "travelers_claimant": {"table": "loss_details", "category": "row"}}

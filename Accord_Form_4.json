@@ -1,0 +1,293 @@
+{
+   "field_keys":[
+      "carrier /administrator claim number *",
+      "employer (name & address incl zip)",
+      "report purpose code *",
+      "jurisdiction log number *",
+      "jurisdiction *",
+      "insured report number",
+      "osha case number",
+      "employer's location address (if different)",
+      "location #:",
+      "phone #",
+      "carrier (name and address)",
+      "claims administrator (name and address)",
+      "carrier fein *",
+      "policy / self-insured number",
+      "administrator fein *",
+      "agent name:",
+      "agent code number:",
+      "name (last, first, middle)",
+      "date of birth",
+      "social security number",
+      "date hired",
+      "state of hire",
+      "address (incl zip)",
+      "occupation/ job title",
+      "employment status",
+      "ncci class code *",
+      "phone",
+      "# of dependents",
+      "rate",
+      "average weekly wages",
+      "# days worked / week",
+      "full pay for day of injury? (y/n)",
+      "did injury /illness exposure occur on employer's premises? (y/n)",
+      "date of injury/illness",
+      "time employee began work",
+      "last work date",
+      "date employer notified",
+      "date disability began",
+      "contact name",
+       "type of injury /illness",
+       "part of body affected",
+       "part of body affected code *",
+       "department or location where accident or illness exposure occurred",
+       "all equipment, materials, or chemicals employee was using when accident or illness exposure occurred",
+       "specific activity the employee was engaged in when the accident or illness exposure occurred",
+       "work process the employee was engaged in when accident or illness exposure occurred",
+       "how injury or illness / abnormal health condition occurred. describe the sequence of events and include any objects or substances that directly injured the employee or made the employee ill",
+       "date return(ed) to work",
+       "if fatal, give date of death",
+       "were safeguards or safety equipment provided? (y/n) ",
+       "were they used? (y/n)",
+       "physician/ health care provider (name & address)",
+       "hospital or offsite treatment (name & address)",
+       "date administrator notified ",
+       "date prepared",
+       "preparer's name",
+       "title",
+       "phone number"
+   ],
+   "display_name":{
+      "effective date":[
+         "A130_EFFECTIVE_DATE",
+         "EFFECTIVE DATE"
+      ],
+      "proposed eff date":[
+         "A130_EFFECTIVE_DATE",
+         "EFFECTIVE DATE"
+      ],
+      "policy number":[
+         "A130_POLICY_NUMBER",
+         "POLICY NUMBER"
+      ],
+      "state":[
+         "A130_STATE",
+         "STATE"
+      ]
+   },
+   "accord_rule":[
+      {
+         "parent":[
+            "AGENCY",
+            "AGENCY NAME AND ADDRESS",
+            "AGENCY NAME"
+         ],
+         "child":"state",
+         "possible_values":[
+            "IA",
+            "KS",
+            "UT",
+            "VA",
+            "NC",
+            "NE",
+            "SD",
+            "AL",
+            "ID",
+            "FM",
+            "DE",
+            "AK",
+            "CT",
+            "PR",
+            "NM",
+            "MS",
+            "PW",
+            "CO",
+            "NJ",
+            "FL",
+            "MN",
+            "VI",
+            "NV",
+            "AZ",
+            "WI",
+            "ND",
+            "PA",
+            "OK",
+            "KY",
+            "RI",
+            "NH",
+            "MO",
+            "ME",
+            "VT",
+            "GA",
+            "GU",
+            "AS",
+            "NY",
+            "CA",
+            "HI",
+            "IL",
+            "TN",
+            "MA",
+            "OH",
+            "MD",
+            "MI",
+            "WY",
+            "WA",
+            "OR",
+            "MH",
+            "SC",
+            "IN",
+            "LA",
+            "MP",
+            "DC",
+            "MT",
+            "AR",
+            "WV",
+            "TX",
+            "Alaska",
+            "Alabama",
+            "Arkansas",
+            "American Samoa",
+            "Arizona",
+            "California",
+            "Colorado",
+            "Connecticut",
+            "District ",
+            "of Columbia",
+            "Delaware",
+            "Florida",
+            "Georgia",
+            "Guam",
+            "Hawaii",
+            "Iowa",
+            "Idaho",
+            "Illinois",
+            "Indiana",
+            "Kansas",
+            "Kentucky",
+            "Louisiana",
+            "Massachusetts",
+            "Maryland",
+            "Maine",
+            "Michigan",
+            "Minnesota",
+            "Missouri",
+            "Mississippi",
+            "Montana",
+            "North Carolina",
+            "North Dakota",
+            "Nebraska",
+            "New Hampshire",
+            "New Jersey",
+            "New Mexico",
+            "Nevada",
+            "New York",
+            "Ohio",
+            "Oklahoma",
+            "Oregon",
+            "Pennsylvania",
+            "Puerto Rico",
+            "Rhode Island",
+            "South Carolina",
+            "South Dakota",
+            "Tennessee",
+            "Texas",
+            "Utah",
+            "Virginia",
+            "Virgin Islands",
+            "Vermont",
+            "Washington",
+            "Wisconsin",
+            "West Virginia",
+            "Wyoming"
+         ]
+      }
+   ],
+   "check_box_fields":{
+      "check_box":{"Initial Treatment": ["no medical treatment","minor: by employer","minor clinic/hosp","emergency care","overnight hospitalization","future major medical/ lost time anticipated",""]},
+      "check_box_splitted":{
+         
+      }
+   },
+   "repeated_entity":[
+      {
+         "prefix":" 1 . ",
+         "key_word":"physician/ health care provider (name & address)",
+         "range":[
+            3,
+            3
+         ],
+         "word_list":[
+            "witness name:"
+         ]
+      },
+      {
+         "prefix":"2 . ",
+         "key_word":"hospital or offsite treatment (name & address)",
+         "range":[
+            3,
+            2
+         ],
+         "word_list":[
+            "witness name:"
+         ]
+      },
+      {
+         "prefix":"carrier ",
+         "key_word":"carrier fein *",
+         "range":[
+            2,
+            2
+         ],
+         "word_list":[
+            "phone (a/c, no, ext):"
+         ]
+      },
+       {
+         "prefix":"administrator ",
+         "key_word":"administrator fein *",
+         "range":[
+            20,
+            2
+         ],
+         "word_list":[
+            "phone (a/c, no, ext):"
+         ]
+      },
+       {
+         "prefix":"Contact name ",
+         "key_word":"contact name",
+         "range":[
+            3,
+            3
+         ],
+         "word_list":[
+            "phone (a/c, no, ext):"
+         ]
+      },
+       {
+         "prefix":"1. Witness ",
+         "key_word":"physician/ health care provider (name & address)",
+         "range":[
+            3,
+            9
+         ],
+         "word_list":[
+            "phone (a/c, no, ext):"
+         ]
+      },
+       {
+         "prefix":"2. Witness ",
+         "key_word":"hospital or offsite treatment (name & address)",
+         "range":[
+            2,
+            9
+         ],
+         "word_list":[
+            "phone (a/c, no, ext):"
+         ]
+      }
+  
+   ]
+}

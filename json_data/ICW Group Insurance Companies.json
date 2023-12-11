@@ -1,0 +1,1 @@
+{"icw_claim_detail": {"table": "loss_details", "category": "row"}, "icw_policy": {"table": "loss_details", "category": "id"}, "icw_insured": {"table": "loss_summary", "category": "id"}, "icw_current_past": {"table": "loss_summary", "category": "row"}}

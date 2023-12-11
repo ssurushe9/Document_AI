@@ -1,0 +1,1 @@
+{"employers_loss_details": {"table": "loss_details", "category": "row"}, "employers_policy_number": {"table": "loss_details", "category": "id"}, "employers_policy_holder": {"table": "loss_details", "category": "id"}}

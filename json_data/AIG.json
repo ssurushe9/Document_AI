@@ -1,0 +1,1 @@
+{"AIG_loss_details": {"table": "loss_details", "category": "row"}, "AIG_claimant": {"table": "loss_details", "category": "id"}, "AIG_insured": {"table": "loss_details", "category": "id"}, "AIG_account": {"table": "loss_details", "category": "id"}}

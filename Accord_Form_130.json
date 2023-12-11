@@ -1,0 +1,59 @@
+{
+   "field_keys":[ "office phone:", "other rating bureau id or state employer registration number", "(a/c, no):","fax (a/c, no):", "naics:", "underwriter:", "ncci risk id number", "federal employer id number", "applicant name:", "yrs in bus:", "managed care option", "producer name:", "sic:", "part 2 - employer's liability", "part 1 -workers compensation (states)","company", "website address:", "agency name and address","(a/c, office no, phone ext):","office phone (a/c, no, ext):", "agency customer id:", "proposed exp date", "sub code:", "credit bureau name:", "assigned risk (attach acord 133)", "proposed eff date", "additional company information", "mailing address (including zip + 4 or canadian postal code)", "date (mm/dd/yyyy)", "code:", "id number:", "cs representative name:","rating information - state:"]
+   ,
+   "display_name":{ "effective date":["A130_EFFECTIVE_DATE","EFFECTIVE DATE" ], 
+					"proposed eff date":["A130_EFFECTIVE_DATE","Proposed Eff Date" ], 
+					 "(a/c, office no, phone ext):":["A130_office_phone_ac","Office Phone (a/c, no, ext):" ], 
+					 "state":["A130_STATE","STATE" ]
+				  },
+   "accord_rule":[
+		{"parent":[ "AGENCY", "AGENCY NAME AND ADDRESS", "AGENCY NAME"],
+		 "child":"state",
+		 "possible_values":[ "IA", "KS", "UT", "VA", "NC", "NE", "SD", "AL", "ID", "FM", "DE", "AK", "CT", "PR", "NM", "MS", "PW", "CO", "NJ", "FL", "MN", "VI", "NV", "AZ", "WI", "ND", "PA", "OK", "KY", "RI", "NH", "MO", "ME", "VT", "GA", "GU", "AS", "NY", "CA", "HI", "IL", "TN", "MA", "OH", "MD", "MI", "WY", "WA", "OR", "MH", "SC", "IN", "LA", "MP", "DC", "MT", "AR", "WV", "TX", "Alaska", "Alabama", "Arkansas", "American Samoa", "Arizona", "California", "Colorado", "Connecticut", "District ", "of Columbia", "Delaware", "Florida", "Georgia", "Guam", "Hawaii", "Iowa", "Idaho", "Illinois", "Indiana", "Kansas", "Kentucky", "Louisiana", "Massachusetts", "Maryland", "Maine", "Michigan", "Minnesota", "Missouri", "Mississippi", "Montana", "North Carolina", "North Dakota", "Nebraska", "New Hampshire", "New Jersey", "New Mexico", "Nevada", "New York", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Puerto Rico", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Virginia", "Virgin Islands", "Vermont", "Washington", "Wisconsin", "West Virginia", "Wyoming"] 
+		}
+	],
+   "check_box_fields":{
+      "check_box":{"Submission Status": ["quote", "issue policy","bound (give date and/or attach copy)","assigned risk (attach acord 133)"],"Billing Plan":["direct bill","agency bill"],"Insurer Type":["joint venture","trust","partnership","sole proprietor","other","corporation","llc","subchapter \"s\" corp"]
+      },
+      "check_box_splitted":{}
+   },
+   "table":{ 
+			"table_with_header":[
+         {
+            "headers":[ "Loc #", "HIGHEST FLOOR", "STREET, CITY, COUNTY, STATE, ZIP CODE" ],
+            "extract":[ "Loc #", "HIGHEST FLOOR", "STREET, CITY, COUNTY, STATE, ZIP CODE" ],
+            "header_display":[ "Location", "HIGHEST FLOOR", "STREET, CITY, COUNTY, STATE, ZIP CODE" ]
+         },
+         {
+            "headers":[ "type", "name", "office phone", "mobile phone", "e-mail" ],
+            "extract":[ "type", "name", "office phone", "mobile phone", "e-mail" ],
+            "header_display":[ "type", "name", "office phone", "mobile phone", "e-mail" ]
+         },
+         {
+            "headers":[ "STATE","LOC #","NAME","DATE OF BIRTH","TITLE/RELATIONSHIP","OWNER-SHIP %","DUTIES","INC/EXC","CLASS CODE","REMUNERATION/PAYROLL" ],
+            "extract":[ "STATE","LOC #","NAME","DATE OF BIRTH","TITLE/RELATIONSHIP","OWNER-SHIP %","DUTIES","INC/EXC","CLASS CODE","REMUNERATION/PAYROLL" ],
+            "header_display":["STATE","LOC #","NAME","DATE OF BIRTH","TITLE/RELATIONSHIP","OWNER-SHIP %","DUTIES","INC/EXC","CLASS CODE","REMUNERATION/PAYROLL"]
+         },
+         {
+            "headers":["YEAR","CARRIER & POLICY NUMBER","ANNUAL PREMIUM","MOD","# CLAIMS","AMOUNT PAID","RESERVE" ],
+            "extract":["YEAR","CARRIER & POLICY NUMBER","ANNUAL PREMIUM","MOD","# CLAIMS","AMOUNT PAID","RESERVE" ],
+            "header_display":["YEAR","CARRIER & POLICY NUMBER","ANNUAL PREMIUM","MOD","# CLAIMS","AMOUNT PAID","RESERVE" ]
+         },
+		 {
+            "headers":[ "LOC #","CLASS CODE","CODE","CATEGORIES, DUTIES, CLASSIFICATIONS","FULL TIME","PART TIME","SIC","NAICS","REMUNERATION/PAYROLL","RATE","ANNUAL MANUAL PREMIUM" ],
+            "extract":[ "LOC #","CLASS CODE","CATEGORIES, DUTIES, CLASSIFICATIONS","SIC","NAICS","REMUNERATION/PAYROLL","RATE","ANNUAL MANUAL PREMIUM" ],
+            "header_display":[ "LOC #","CLASS CODE","CATEGORIES, DUTIES, CLASSIFICATIONS","SIC","NAICS","REMUNERATION/PAYROLL","RATE","ANNUAL MANUAL PREMIUM" ]
+         }
+      ],
+      "table_without_header":[]
+   },
+   "repeated_entity":[
+		{"prefix":"Insurer ","key_word":"website address:","range":[ 35, 3],"word_list":[ "e-mail address:"] },    
+		{"prefix":"Agency ","key_word":"fax (a/c, no):","range":[ 1, 3],"word_list":[ "e-mail address:"] }, 
+		{"prefix":"Insurer ","key_word":"office phone:","range":[34, 2],"word_list":[ "mobile phone:"] }, 
+		{"prefix":"Agency ","key_word":"producer name:","range":[ 2, 15],"word_list":[ "mobile phone:"] },
+		{"prefix":"Payment Plan","key_word_string":"Payment Plan","range":[ 2, 15],"word_list":[ "semi-annual","annual","quarterly","9p"] },
+		{"prefix":"Audit","key_word_string":"Audit","range":[ 3, 15],"word_list":[ "semi-annual","monthly","quarterly","at expiration","annual"] },
+		{"prefix":"OTHER COVERAGES","key_word_string":"retro plan","range":[ 9, 15],"word_list":[ "u.s.l. & h.","voluntary comp","managed care option","foreign cov"] }
+		]
+}

@@ -1,0 +1,1 @@
+{"atlas_insured": {"table": "loss_summary", "category": "id"}, "atlas_insured_loss_summary": {"table": "loss_summary", "category": "row"}, "atlas_policy": {"table": "loss_details", "category": "id"}, "atlas_claim_details": {"table": "loss_details", "category": "row"}}
